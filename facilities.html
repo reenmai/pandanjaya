@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Facilities</title>
+<link rel="icon" type="image/x-icon" href="Logo.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+        section {
+            background-color: #FFE5B4; /* Toffee Peach background for the section */
+            padding: 20px;
+            text-align: center; /* Centers content */
+        }
+
+        .image-container img {
+            width: 600px; /* Width of the image */
+            height: 400px; /* Height of the image, adjust as needed */
+            display: block; /* Ensures the image is a block element */
+            margin: 0 auto; /* Centers the image */
+            margin-bottom: 20px; /* Adds space between the image and the text */
+            border: 2px solid white; /* Adds a white border around the image */
+        }
+
+        .facilities {
+            /* Center-aligned text, no longer need flex-grow */
+            display: block;
+            text-align: justify;
+            max-width: 80%; /* Adjust the max-width as needed */
+            margin: 0 auto; /* Center the content block */
+        }
+
+        h2 {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #FFF; /* White background for the footer */
+            padding: 10px;
+            text-align: center;
+        }
+
+        .dropdown {
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .w3-right {
+    float: right;
+    padding-top: 20px !important;
+}
+    </style>
+    </head>
+    <body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card">
+    <a href="Cover page group website.pdf" target=”_blank” class="w3-bar-item w3-button w3-wide"><img src="Logo.png" width="60" height="60"></a>
+     <!-- Right-sided navbar links -->
+     <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button">HOME</a> 
+      <a href="about.html" target="_blank" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="history.html" target="_blank" class="w3-bar-item w3-button"></i>HISTORY</a>
+      <a href="culture.html" target="_blank" class="w3-bar-item w3-button"></i>CULTURE</a>
+      <a href="attraction.html" target="_blank" class="w3-bar-item w3-button"></i>ATTRACTION</a>
+      <a href="location and contact.html" target="_blank" class="w3-bar-item w3-button"></i>CONTACT</a>
+      <a href="faqs.html"  target="_blank" class="w3-bar-item w3-button">FAQs</a>
+      
+      <li class="dropdown">
+        <a style="text-decoration: none;"class="w3-bar-item w3-button">OTHERS</a>
+        <div class="dropdown-content">
+          <a href="facilities.html" target="_blank" class="w3-bar-item w3-button">FACILITIES</a>
+          <a href="gallery.html"  target="_blank" class="w3-bar-item w3-button">GALLERY</a>
+          
+        </li>
+       </div>
+   
+   
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+  <a href="about.html" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="history.html" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button">HISTORY</a>
+  <a href="culture.html" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button">CULTURE</a>
+  <a href="attraction.html" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button">ATTRACTION</a>
+  <a href="location and contact.html" target="_blank"  onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  <a href="faqs.html" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button">FAQs</a>
+  <li class="dropdown">
+    <a style="text-decoration: none;"class="w3-bar-item w3-button">OTHERS</a>
+    <div class="dropdown-content">
+      <a href="facilities.html" target="_blank" class="w3-bar-item w3-button">FACILITIES</a>
+      <a href="gallery.html"  target="_blank" class="w3-bar-item w3-button">GALLERY</a>
+    </li>
+</nav>
+
+
+  <section>
+    <div class="w3-container" style="padding:128px 16px; padding-bottom: 50px;">
+        <h3 class="w3-center w3-xxlarge w3-animate-left">FACILITIES</h3>
+        <p class="w3-center w3-large">Facilities of Pandan Jaya</p>
+    <div class="image-container">
+        <img src="lrtpandanjaya2.jpg" alt="Lrt_pandan_jaya2">
+    </div>
+    <div class="facilities">
+        <!-- Facilities content for section 1 -->
+        <h4><strong>LRT Pandan Jaya</strong></h4>
+        <p>Pandan Jaya Light Rail Transit (LRT) station is located in the Ampang Jaya area of Selangor in Malaysia. 
+            It is part of Ampang Line, formerly known as the STAR, Ampang Line, and Sri Petaling Line. It was the first 
+            station to open in the STAR system, along with 13 other stations on the Sultan Ismail Ampang line. The station 
+            is located close to Pandan Jaya and its name is often confused with Pandan Indah Station, which is 1 km northeast 
+            of the station.</p>
+    </div>
+</section>
+
+<section>
+    <div class="image-container">
+        <img src="PPAS_Pandan_Jaya.jpeg" alt="PPAS_Pandan_Jaya">
+    </div>
+    <div class="facilities">
+        <!-- Facilities content for section 2 -->
+        <h4> <strong>Community Library (PPAS Pandan Jaya)</strong></h4>
+        <p>PPAS (pronounced Perbadanan perpustakan awam Selangor) is one branch of PPAS. This branch is located at Pandan Jaya, Malaysia. 
+            It is sometimes called a community library.
+            <p><strong>What is a community library?</strong></p>
+        <p>A community library is a public library that is not a part of an area's statutory library provision. 
+            It is not operated or fully funded by the local or national government. A community library offers library 
+            services to the people of the local or regional community. A community library may be owned and operated by 
+            community groups, charitable organisations, non-governmental organizations and other organisations. However, 
+            it may also receive some public funds from the local authority based on various funding models.
+            </p>
+    </div>
+</section>
+<!-- End page section -->
+
+<!-- Footer -->
+<footer class="w3-center w3-padding-16" style="background-color: 	#ffffff ;">
+    <p>Copyright 2023 Pandan Jaya. All rights reserved. Terms & Conditions. Privacy Policy.
+      <br> Recommended browser google chrome.<br></p>
+</footer>
+  
+<script>
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+  
+  // Toggle between showing and hiding the sidebar when clicking the menu icon
+  var mySidebar = document.getElementById("mySidebar");
+  
+  function w3_open() {
+    if (mySidebar.style.display === 'block') {
+      mySidebar.style.display = 'none';
+    } else {
+      mySidebar.style.display = 'block';
+    }
+  }
+  
+  // Close the sidebar with the close button
+  function w3_close() {
+      mySidebar.style.display = "none";
+  }
+</script>
+</body>
+</html>

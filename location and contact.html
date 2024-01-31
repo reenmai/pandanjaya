@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Location and Contact</title>
+<link rel="icon" type="image/x-icon" href="Logo.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+  .w3-top a {
+  text-decoration: none !important;
+}
+  .google-map {
+     padding-bottom: 50%;
+     position: relative;
+}
+
+.google-map iframe {
+     height: 80%;
+     width: 100%;
+     left: 0;
+     top: 0;
+     position: absolute;
+}
+
+.dropdown {
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.w3-right {
+    float: right;
+    padding-top: 20px !important;
+}
+  </style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card">
+    <a href="Cover page group website.pdf" target=”_blank” class="w3-bar-item w3-button w3-wide"><img src="Logo.png" width="60" height="60"></a>
+     <!-- Right-sided navbar links -->
+     <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button">HOME</a> 
+      <a href="about.html" target="_blank" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="history.html" target="_blank" class="w3-bar-item w3-button"></i>HISTORY</a>
+      <a href="culture.html" target="_blank" class="w3-bar-item w3-button"></i>CULTURE</a>
+      <a href="attraction.html" target="_blank" class="w3-bar-item w3-button"></i>ATTRACTION</a>
+      <a href="location and contact.html" target="_blank" class="w3-bar-item w3-button"></i>CONTACT</a>
+      <a href="faqs.html"  target="_blank" class="w3-bar-item w3-button">FAQs</a>
+      
+      <li class="dropdown">
+        <a style="text-decoration: none;"class="w3-bar-item w3-button">OTHERS</a>
+        <div class="dropdown-content">
+          <a href="facilities.html" target="_blank" class="w3-bar-item w3-button">FACILITIES</a>
+          <a href="gallery.html"  target="_blank" class="w3-bar-item w3-button">GALLERY</a>
+          
+        </li>
+       </div>
+   
+   
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+  <a href="about.html" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="history.html" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button">HISTORY</a>
+  <a href="culture.html" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button">CULTURE</a>
+  <a href="attraction.html" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button">ATTRACTION</a>
+  <a href="location and contact.html" target="_blank"  onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  <a href="faqs.html" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button">FAQs</a>
+  <li class="dropdown">
+    <a style="text-decoration: none;"class="w3-bar-item w3-button">OTHERS</a>
+    <div class="dropdown-content">
+      <a href="facilities.html" target="_blank" class="w3-bar-item w3-button">FACILITIES</a>
+      <a href="gallery.html"  target="_blank" class="w3-bar-item w3-button">GALLERY</a>
+    </li>
+</nav>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Contact Section -->
+  <style>
+  a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+</style>
+<div class="w3-container" style="padding:128px 16px; padding-bottom: 40px;">
+  <h3 class="w3-center w3-xxlarge w3-animate-left">LOCATION AND CONTACT</h3>
+    <p class="w3-center">Any comment or inquiry. </p>
+    <p class="w3-center">Lets get in touch. Send a message.</p>
+    <p class="w3-center"><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> <a href="mailto:pandanjaya@gmail.com"> pandanjaya@gmail.com</a></p>
+    <p class="w3-center"><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> <a href="tel:+603-5788 5044"> +603-5788 5044</a></p>
+    <p class="w3-center"><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> <a href="https://maps.app.goo.gl/sA4gqSiktVDTGfmz5">Mailing Address</a></p>  
+  </form>
+  </div>
+
+<div class="row">
+  <div class="column" style="background-color:#fff; padding-left: 50px;padding-right: 20px;">
+    <div class="google-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15935.378952321955!2d101.73004722363758!3d3.135686925176322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc364322f916eb%3A0x24309b683998b0f!2sPandan%20Jaya%2C%2055100%20Kuala%20Lumpur%2C%20Federal%20Territory%20of%20Kuala%20Lumpur!5e0!3m2!1sen!2smy!4v1706501542557!5m2!1sen!2smy" width="600" height="450" style="border:0; padding-bottom:0px !important;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+  <div class="column" style="background-color:#fff; padding-right: 50px;">
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE 
+        </button>
+      </p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-padding-16" style="background-color: 	#FFE5B4 ;margin-top: 30px;">
+  <p>Copyright 2023 Pandan Jaya. All rights reserved. Terms & Conditions. Privacy Policy.
+    <br> Recommended browser google chrome.<br></p>
+</footer>
+
+<script>
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+  
+  
+  // Toggle between showing and hiding the sidebar when clicking the menu icon
+  var mySidebar = document.getElementById("mySidebar");
+  
+  function w3_open() {
+    if (mySidebar.style.display === 'block') {
+      mySidebar.style.display = 'none';
+    } else {
+      mySidebar.style.display = 'block';
+    }
+  }
+  
+  // Close the sidebar with the close button
+  function w3_close() {
+      mySidebar.style.display = "none";
+  }
+
+  </script>
+</body>
+</html>

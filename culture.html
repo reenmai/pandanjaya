@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Culture</title>
+<link rel="icon" type="image/x-icon" href="Logo.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+        section {
+            background-color: #FFE5B4; /* Toffee Peach background for the section */
+            padding: 20px;
+            text-align: center; /* Centers content */
+        }
+
+        #image {
+            width: 600px; /* Width of the image */
+            height: 600px; /* Height of the image, adjust as needed */
+            margin-bottom: 20px; /* Adds space between the image and the text */
+        }
+
+        #content {
+            /* Center-aligned text, no longer need flex-grow */
+            display: inline-block;
+            text-align: justify;
+            max-width: 80%; /* Adjust the max-width as needed */
+            margin: 0 auto; /* Center the content block */
+        }
+
+        h2 {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #FFF; /* White background for the footer */
+            padding: 10px;
+            text-align: center;
+        }
+
+        .dropdown {
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .w3-right {
+    float: right;
+    padding-top: 20px !important;
+}
+    </style>
+</head>
+    <body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card">
+    <a href="Cover page group website.pdf" target=”_blank” class="w3-bar-item w3-button w3-wide"><img src="Logo.png" width="60" height="60"></a>
+     <!-- Right-sided navbar links -->
+     <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button">HOME</a> 
+      <a href="about.html" target="_blank" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="history.html" target="_blank" class="w3-bar-item w3-button"></i>HISTORY</a>
+      <a href="culture.html" target="_blank" class="w3-bar-item w3-button"></i>CULTURE</a>
+      <a href="attraction.html" target="_blank" class="w3-bar-item w3-button"></i>ATTRACTION</a>
+      <a href="location and contact.html" target="_blank" class="w3-bar-item w3-button"></i>CONTACT</a>
+      <a href="faqs.html"  target="_blank" class="w3-bar-item w3-button">FAQs</a>
+      
+      <li class="dropdown">
+        <a style="text-decoration: none;"class="w3-bar-item w3-button">OTHERS</a>
+        <div class="dropdown-content">
+          <a href="facilities.html" target="_blank" class="w3-bar-item w3-button">FACILITIES</a>
+          <a href="gallery.html"  target="_blank" class="w3-bar-item w3-button">GALLERY</a>
+          
+        </li>
+       </div>
+   
+   
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+  <a href="about.html" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="history.html" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button">HISTORY</a>
+  <a href="culture.html" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button">CULTURE</a>
+  <a href="attraction.html" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button">ATTRACTION</a>
+  <a href="location and contact.html" target="_blank"  onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  <a href="faqs.html" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button">FAQs</a>
+  <li class="dropdown">
+    <a style="text-decoration: none;"class="w3-bar-item w3-button">OTHERS</a>
+    <div class="dropdown-content">
+      <a href="facilities.html" target="_blank" class="w3-bar-item w3-button">FACILITIES</a>
+      <a href="gallery.html"  target="_blank" class="w3-bar-item w3-button">GALLERY</a>
+    </li>
+</nav>
+</nav>
+
+
+<!--This is section-->
+<section>
+  <div class="w3-container" style="padding:128px 16px; padding-bottom: 50px;">
+    <h3 class="w3-center w3-xxlarge w3-animate-left">CULTURE</h3>
+    <p class="w3-center w3-large">Culture of Pandan Jaya</p>
+  <img id="image" src="Culture_pandan_jaya (1).jpg" alt="Culture_Pandan_Jaya">
+  <div id="content">
+      <!-- Content for the section -->
+      <h4 title="Culture_Pandan_Jaya"><strong>Local community culture at Pandan Jaya</strong></h4>
+      <p><b>Pandan Jaya</b> is home to a variety of cultural events and festivals, such as Chinese New Year, Deepavali, Hari Raya, and Aidilfitri. 
+        People from all walks of life come together to celebrate these festivals, and the streets are often decorated. 
+        There are also community events that bring people from different backgrounds together, showing the unity of diversity.
+        Pandan Jaya is also home to local trades. You can find Chinese vintage clocks, Indian flower shops, Malay grocery stores, and more. 
+        These shops not only provide a source of income for the locals, but also serve as a hub for local businesses. In addition to the Malay language, there are also a variety of other languages spoken 
+        in Pandan Jaya. These languages range from Cantonese and Tamil to English, which shows the diversity of the community
+        Pandan Jaya is a melting pot of cultures, with a variety of educational institutions catering to different communities, 
+        such as national schools, community centers, and street food. The area is also home to a variety of religious structures, 
+        such as surau, temples, and churches, which often come near one another. Community centers are also important for promoting 
+        communal harmony, as they host events and activities that cater to all cultural groups. Local markets and street food are a 
+        great way to experience Pandan Jaya's cultural diversity, with a wide selection of fresh produce, ethnic foods, and spices. 
+        For Malay cuisine, <a href="https://maps.app.goo.gl/CzHkzWbJZYGrJmhi7" target="_blank"><b> (Warung tok Pa)</a> </b>, 
+        Chinese cuisine <a href="https://maps.app.goo.gl/N7mG4vEX3bW6Qa42A" target="_blank"><b> (Restaurant Pandan Jaya World)</a> </b> and 
+        Indian cuisine <a href="https://maps.app.goo.gl/QNLwrt5FziPurovY8" target="_blank"><b> (Gopal Vegetarian Restaurant Saranya)</a> </b>, these are top recommendations for restaurants.
+        </p>
+  </div>
+</section>
+<!-- End page section -->
+
+<!-- Footer -->
+<footer class="w3-center w3-padding-16" style="background-color: 	#ffffff ;">
+  <p>Copyright 2023 Pandan Jaya. All rights reserved. Terms & Conditions. Privacy Policy.
+    <br> Recommended browser google chrome.<br></p>
+</footer>
+
+<script>
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+  
+  // Toggle between showing and hiding the sidebar when clicking the menu icon
+  var mySidebar = document.getElementById("mySidebar");
+  
+  function w3_open() {
+    if (mySidebar.style.display === 'block') {
+      mySidebar.style.display = 'none';
+    } else {
+      mySidebar.style.display = 'block';
+    }
+  }
+  
+  // Close the sidebar with the close button
+  function w3_close() {
+      mySidebar.style.display = "none";
+  }
+  </script>
+</body>
+</html>
